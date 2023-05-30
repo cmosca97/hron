@@ -25,7 +25,8 @@ from job;
 select title,
     min_salary,
     min_salary + 200 as "option 1",
-    min_salary + (min_salary * 0.05) as "option 2"
+--  min_salary + (min_salary * 0.05) as "option 2"
+    trunc(min_salary + (min_salary * 0.05)) as "option 3"
 from job;
 
 -- no table involved in this select
