@@ -49,3 +49,7 @@ from employee e join department d
 where hired >= '2020-01-01'
 group by d.name;
 
+select department_id, round(avg(salary)) as avg_sal
+from employee
+where hired >= '2020-01-01'
+group by department_id;
